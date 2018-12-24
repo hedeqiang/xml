@@ -26,7 +26,7 @@ $xml = "<xml>
 print_r(xml::parse($xml)) ;
 ```
 ### 创建XML
-```$xslt
+```php
 $data = [
     'id' => 'bk101',
     'author' => 'Gambardella, Matthew',
