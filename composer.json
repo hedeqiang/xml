@@ -10,7 +10,7 @@
     ],
     "require": {
         "mockery/mockery": "^1.2",
-        "phpunit/phpunit": "~5"
+        "phpunit/phpunit": "^7.5"
     },
     "autoload": {
         "psr-4": {
