@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the hedeqiang/xml.
+ *
+ * (c) hedeqiang <laravel_code@163.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Hedeqiang\Xml\Tests;
 
 use PHPUnit\Framework\TestCase;
@@ -35,6 +44,7 @@ class XmlTest extends TestCase
             'description' => 'An in-depth look at creating applications with XML.',
         ], $array);
     }
+
     public function testBuild()
     {
         $data = [
@@ -59,10 +69,12 @@ class XmlTest extends TestCase
             .'<description><![CDATA[An in-depth look at creating applications with XML.]]></description>'
             .'</xml>', XML::build($data, 'xml', 'item', ['version' => '1.0']));
     }
+
     public function testCdata()
     {
         $this->assertSame('<![CDATA[text here]]>', XML::cdata('text here'));
     }
+
     public function testSanitize()
     {
         $content_template = '<1%s%s%s234%s微信测试%sabcd?*_^%s@#%s%s%s>';

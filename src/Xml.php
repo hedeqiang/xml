@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the hedeqiang/xml.
+ *
+ * (c) hedeqiang <laravel_code@163.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Hedeqiang\Xml;
 
 class Xml
@@ -16,8 +25,10 @@ class Xml
         $backup = libxml_disable_entity_loader(true);
         $result = self::normalize(simplexml_load_string(self::sanitize($xml), 'SimpleXMLElement', LIBXML_COMPACT | LIBXML_NOCDATA | LIBXML_NOBLANKS));
         libxml_disable_entity_loader($backup);
+
         return $result;
     }
+
     /**
      * XML encode.
      *
@@ -48,8 +59,10 @@ class Xml
         $xml = "<{$root}{$attr}>";
         $xml .= self::data2Xml($data, $item, $id);
         $xml .= "</{$root}>";
+
         return $xml;
     }
+
     /**
      * Build CDATA.
      *
@@ -61,6 +74,7 @@ class Xml
     {
         return sprintf('<![CDATA[%s]]>', $string);
     }
+
     /**
      * Object to array.
      *
@@ -87,8 +101,10 @@ class Xml
         } else {
             $result = $obj;
         }
+
         return $result;
     }
+
     /**
      * Array to XML.
      *
@@ -114,8 +130,10 @@ class Xml
             }
             $xml .= "</{$key}>";
         }
+
         return $xml;
     }
+
     /**
      * Delete invalid characters in XML.
      *
