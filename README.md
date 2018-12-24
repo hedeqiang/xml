@@ -12,17 +12,40 @@ $ composer require hedeqiang/xml -vvv
 
 ## Usage
 
-TODO
+### 解析XML，返回数组
+```php
+require __DIR__ .'/vendor/autoload.php';
 
-## Contributing
+use Hedeqiang\Xml\Xml;
 
-You can contribute in one of three ways:
+$xml = "<xml>
+        <foo>name</foo>
+        <bar>age</bar>
+        <name><![CDATA[text here]]></name>
+    </xml>";
+print_r(xml::parse($xml)) ;
+```
+### 创建XML
+```$xslt
+$data = [
+    'id' => 'bk101',
+    'author' => 'Gambardella, Matthew',
+    'title' => 'XML Developer\'s Guide',
+    'genre' => 'Computer',
+    'price' => '44.95',
+    'items' => ['foo', 'bar'],
+    'publish_date' => '2000-10-01',
+    'description' => 'An in-depth look at creating applications with XML.',
+];
+print_r(xml::build($data));
+```
 
-1. File bug reports using the [issue tracker](https://github.com/hedeqiang/xml/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com/hedeqiang/xml/issues).
-3. Contribute new features or update the wiki.
+## 鸣谢
+该内容来自超哥 [EasyWechat](https://github.com/overtrue/wechat) ,因业务需要解析xml数据，网上找到一个关于解析的，无奈该扩展xml 数据源不能从接口获取，So 把超哥的代码搬过来了.原封不动，就连测试用例也搬过来了......
 
-_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
+
+[Rodenastyle/stream-parser](https://github.com/Rodenastyle/stream-parser)  ，另外刚才说的扩展就是这个，如果你是读取一个xml文件的话，可以使用这个扩展
+
 
 ## License
 
