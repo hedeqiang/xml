@@ -5,7 +5,7 @@
 来自超哥 [EasyWechat](https://github.com/overtrue/wechat)
 
 [![Build Status](https://travis-ci.org/hedeqiang/xml.svg?branch=master)](https://travis-ci.org/hedeqiang/xml)
-
+[![StyleCI](https://github.styleci.io/repos/162980932/shield?branch=master)](https://github.styleci.io/repos/162980932)
 ## Installing
 
 ```shell
