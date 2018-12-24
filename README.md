@@ -4,6 +4,8 @@
 
 来自超哥 [EasyWechat](https://github.com/overtrue/wechat)
 
+[![Build Status](https://travis-ci.org/hedeqiang/xml.svg?branch=master)](https://travis-ci.org/hedeqiang/xml)
+
 ## Installing
 
 ```shell
