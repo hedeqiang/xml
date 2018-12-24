@@ -1,0 +1,20 @@
+{
+    "name": "hedeqiang\/xml",
+    "description": "xml解析",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hedeqiang",
+            "email": "laravel_code@163.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^7.5",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hedeqiang\\Xml\\": "./src/"
+        }
+    }
+}
