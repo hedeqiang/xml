@@ -6,6 +6,7 @@
 
 [![Build Status](https://travis-ci.org/hedeqiang/xml.svg?branch=master)](https://travis-ci.org/hedeqiang/xml)
 [![StyleCI](https://github.styleci.io/repos/162980932/shield?branch=master)](https://github.styleci.io/repos/162980932)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhedeqiang%2Fxml.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhedeqiang%2Fxml?ref=badge_shield)
 ## Installing
 
 ```shell
@@ -52,3 +53,5 @@ print_r(xml::build($data));
 ## License
 
 MIT
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fhedeqiang%2Fxml.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fhedeqiang%2Fxml?ref=badge_large)
